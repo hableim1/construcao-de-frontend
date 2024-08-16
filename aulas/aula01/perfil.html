@@ -4,16 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aluno Online</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <aside><ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Perfil</a></li>
-        <li><a href="">Sair</a></li>
-    </ul></aside>
+    <header>
+        <img src="" alt="">
+        <h1>Aluno Online</h1>
+        <input type="search" name="filtro" placeholder="Pesquisar...">
+        <img src="" alt="Icone de Pesquisar"></header>
     <main>
-        <h1>Perfil</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html"></a>Home</li>
+                <li><a href="perfil.html"></a>Perfil</li>
+                <li><a href="index.html"></a>Sair</li>
+            </ul>
+        </nav>
+        <section>
+            <h2>Perfil do Aluno</h2>
+            <form action="" method="post">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" required />
+                  </div>
+                  <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required />
+                  </div>
+                  <div>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" required />
+                  </div>
+                <input type="submit" value="salvar"></form>
+        </section>
     </main>
-    <footer>Copyright (C) 2024</footer>
 </body>
 </html>
