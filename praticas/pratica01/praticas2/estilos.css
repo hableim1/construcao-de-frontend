@@ -1,9 +1,11 @@
+/* Limpar espaçamentos e manter o tamanho consistente */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos para o body */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -15,6 +17,7 @@ body {
     height: 100vh;
 }
 
+/* Estilos para o header */
 header {
     background-color: #4CAF50;
     color: white;
@@ -24,21 +27,25 @@ header {
     align-items: center;
 }
 
+/* Estilos para as divs dentro do header */
 header div {
     display: flex;
     align-items: center;
 }
 
+/* Estilos para img dentro do header */
 header img {
     max-width: 50px;
     margin-right: 16px;
     cursor: pointer;
 }
 
+/* Estilos para h1 dentro do header */
 header h1 {
     font-size: 1.8em;
 }
 
+/* Estilos para input[type="search"] */
 input[type="search"] {
     padding: 8px;
     border: none;
@@ -46,18 +53,21 @@ input[type="search"] {
     margin-right: 16px;
 }
 
+/* Estilos para o main */
 main {
     flex: 1;
     display: flex;
     background-color: #fff;
 }
 
+/* Estilos para label */
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
+/* Estilos para inputs de texto, email e senha */
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -70,6 +80,7 @@ input[type="password"] {
     width: 100%;
 }
 
+/* Estilos para input[type="submit"] */
 input[type="submit"] {
     padding: 8px 16px;
     background-color: #4CAF50;
@@ -81,6 +92,7 @@ input[type="submit"] {
     margin-bottom: 8px;
 }
 
+/* Estilos para nav */
 nav {
     flex: 1;
     background-color: #fff;
@@ -88,14 +100,17 @@ nav {
     padding: 8px;
 }
 
+/* Remover marcador da lista em nav */
 nav ul {
     list-style: none;
 }
 
+/* Estilos para li em nav */
 nav ul li {
     margin-bottom: 16px;
 }
 
+/* Estilos para a dentro de li em nav */
 nav ul li a {
     text-decoration: none;
     color: #333;
@@ -106,11 +121,13 @@ nav ul li a {
     transition: background-color 0.3s ease;
 }
 
+/* Efeito hover para a em nav */
 nav ul li a:hover {
     background-color: #4CAF50;
     color: white;
 }
 
+/* Estilos para section */
 section {
     flex: 4;
     display: flex;
@@ -118,6 +135,7 @@ section {
     padding: 8px 8px 8px 16px;
 }
 
+/* Estilos para h2 em section */
 section h2 {
     margin-bottom: 16px;
     font-size: 1.5em;
@@ -125,16 +143,19 @@ section h2 {
     padding-bottom: 16px;
 }
 
+/* Estilos para form em section */
 section form {
-    max-width: 368px;
+     max-width: 368px;
 }
 
+/* Estilos para article */
 article {
-    padding: 16px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+     padding: 16px;
+     border: 1px solid #ccc;
+     border-radius: 8px;
 }
 
+/* Estilos para footer */
 footer {
     text-align: center;
     margin-top: 8px;
@@ -143,6 +164,7 @@ footer {
     color: #666;
 }
 
+/* Estilos para login-container */
 .login-container {
     max-width: 400px;
     margin: 48px auto;
@@ -155,21 +177,25 @@ footer {
     width: 100%;
 }
 
+/* Estilos para img em login-container */
 .login-container img {
     max-width: 100px;
     margin: 0 auto;
 }
 
+/* Estilos para h1 em login-container */
 .login-container h1 {
     margin-bottom: 20px;
     text-align: center;
     color: #4CAF50;
 }
 
+/* Estilos para input[type="submit"] em login-container */
 .login-container input[type="submit"] {
     width: 100%;
 }
 
+/* Estilos para a em login-container */
 .login-container a {
     display: block;
     margin-top: 8px;
@@ -178,34 +204,34 @@ footer {
     text-decoration: none;
 }
 
+/* Estilos para card-grid */
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 16px;
 }
 
+/* Estilos para media query */
 @media (max-width: 768px) {
-}
+    body {
+        height: 100%;
+        overflow: auto;
+    }
 
-body {
-    height: 100%;
-    overflow: auto;
-}
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
 
-header {
-    flex-direction: column;
-    text-align: center;
-}
+    main {
+        flex-direction: column;
+    }
 
-main {
-    flex-direction: column;
-}
+    nav {
+        border-bottom: 2px solid #ccc;
+    }
 
-nav {
-    border-bottom: 2px solid #ccc;
+    .card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
 }
-
-.card-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
