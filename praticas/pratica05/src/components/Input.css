@@ -1,0 +1,17 @@
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
